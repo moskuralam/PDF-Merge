@@ -1,5 +1,4 @@
 import React from 'react';
-import { Layers } from 'lucide-react';
 
 interface HeaderProps {
   onLogoClick?: () => void;
@@ -14,12 +13,23 @@ export const Header: React.FC<HeaderProps> = ({ onLogoClick }) => {
           type="button"
           onClick={onLogoClick}
           aria-label="PDF Merge home"
-          className="flex items-center gap-3 cursor-pointer select-none text-left border-0 bg-transparent p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3478F6] rounded-xl"
+          className="flex items-center gap-2.5 sm:gap-3 cursor-pointer select-none text-left border-0 bg-transparent p-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3478F6] rounded-xl"
         >
-          {/* Dark squircle logo icon */}
-          <div className="w-10 h-10 rounded-xl bg-[#1E232A] flex items-center justify-center text-white shadow-xs pointer-events-none">
-            <Layers className="w-5 h-5 text-white" />
-          </div>
+          {/* New official logo with transparent background */}
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-7 h-7 sm:w-8 sm:h-8 shrink-0 pointer-events-none"
+            aria-hidden="true"
+          >
+            <path
+              d="M1.31779 12.2364C2.2753 13 3.68353 13 6.5 13C6.77606 13 7 13.2239 7 13.5C7 16.3165 7 17.7247 7.76359 18.6822C7.92699 18.8871 8.1129 19.073 8.3178 19.2364C9.2753 20 10.6835 20 13.5 20C16.3165 20 17.7247 20 18.6822 19.2364C18.8871 19.073 19.073 18.8871 19.2364 18.6822C20 17.7247 20 16.3165 20 13.5C20 10.6835 20 9.2753 19.2364 8.3178C19.073 8.1129 18.8871 7.92699 18.6822 7.76359C17.7247 7 16.3165 7 13.5 7C13.224 7 13 6.77597 13 6.5C13 3.68353 13 2.2753 12.2364 1.31779C12.073 1.11289 11.8871 0.92699 11.6822 0.76359C10.7247 1.19209e-07 9.3165 0 6.5 0C3.68353 0 2.2753 1.19209e-07 1.31779 0.76359C1.11289 0.92699 0.92699 1.11289 0.76359 1.31779C1.19209e-07 2.2753 0 3.68353 0 6.5C0 9.3165 1.19209e-07 10.7247 0.76359 11.6822C0.92699 11.8871 1.11289 12.073 1.31779 12.2364Z"
+              fill="#3478F6"
+            />
+          </svg>
           <span className="text-base font-bold text-[#292D32] tracking-tight pointer-events-none">
             PDF Merge
           </span>
