@@ -17,12 +17,12 @@ export const Header: React.FC<HeaderProps> = ({ onLogoClick }) => {
         >
           {/* New official logo with transparent background */}
           <svg
-            width="28"
-            height="28"
+            width="24"
+            height="24"
             viewBox="0 0 20 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-7 h-7 sm:w-8 sm:h-8 shrink-0 pointer-events-none"
+            className="w-6 h-6 sm:w-7 sm:h-7 shrink-0 pointer-events-none"
             aria-hidden="true"
           >
             <path
